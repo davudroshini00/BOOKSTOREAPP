@@ -39,13 +39,7 @@ app.use("/book", bookRoute); // Book routes
 app.use("/user", userRoute); // User routes
 
 // Serve frontend assets in production
-if (process.env.NODE_ENV === "production") {
-    const dirPath = path.resolve();
-    app.use(express.static("Frontend/dist")); // Serve static files
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(dirPath, "Frontend", "dist", "index.html")); // Serve index.html for all other routes
-    });
-}
+
 
 // Start the server
 app.listen(PORT, () => {
