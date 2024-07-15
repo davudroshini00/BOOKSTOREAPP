@@ -20,19 +20,16 @@ dotenv.config();
 const PORT = process.env.PORT || 4000;
 
 // MongoDB URI from environment variables
-const URI = process.env.MongoDBURI;
-
-// Connect to MongoDB
-mongoose.connect(URI); // Removed useNewUrlParser and useUnifiedTopology options
-
-// Define MongoDB connection events
-mongoose.connection.on('connected', () => {
-    console.log('Connected to MongoDB');
-});
-
-mongoose.connection.on('error', (err) => {
+const uri = process.env.MONGO_URI;
+console.log('MongoDB URI:', uri); 
+mongoose.connect(uri, {
+    
+    serverSelectionTimeoutMS: 30000 // 30 seconds
+  }).then(() => {
+    console.log('MongoDB connected...');
+  }).catch(err => {
     console.error('MongoDB connection error:', err);
-});
+  });
 
 // Routes
 app.use("/book", bookRoute); // Book routes
