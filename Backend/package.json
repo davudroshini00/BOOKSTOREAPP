@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "npm run dev"
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
     "nodemon": "^3.1.0",
     "sharp": "^0.33.3"
   },
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "vite": "^5.3.3"
+  }
 }
