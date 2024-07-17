@@ -5,8 +5,11 @@ export default defineConfig({
   root: 'Frontend',
   base: './',
   plugins: [react()],
+ logLevel: 'info',
+ test: {
+  globals: true,
+  environment: 'jsdom',
+  setupFiles: './setupTest.ts',
+},
  
-  define: {
-    'process.env.NODE_ENV': JSON.stringify('production')
-  },
 });
