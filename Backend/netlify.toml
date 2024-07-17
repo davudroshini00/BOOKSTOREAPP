@@ -1,3 +1,9 @@
 [build]
-  command = "npm run dev"  # Adjust this command based on your build setup
-  publish = "dist"          # Adjust this directory based on where your built files are located
+  base = "frontend"
+  publish = "frontend/dist"
+  command = "npm run build"
+
+[build.environment]
+  MONGO_URI = "your_mongo_uri"
+  NODE_ENV = "production"
+  PORT = "4001"
