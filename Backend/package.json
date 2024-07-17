@@ -28,6 +28,7 @@
     "daisyui": "^4.12.10",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "glob": "^11.0.0",
     "mongodb": "^6.8.0",
     "mongoose": "^8.3.4",
     "nodemon": "^3.1.0",
