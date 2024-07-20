@@ -14,10 +14,5 @@ export default defineConfig({
   server: {
     port: 4001,
   },
-  build: {
-    outDir: 'dist', // This ensures the build output goes to the dist folder
-    rollupOptions: {
-      input: 'backend/frontend/index.html', // Ensure this points to your index.html
-    },
-  },
+ 
 });
