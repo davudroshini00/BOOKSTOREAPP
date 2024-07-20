@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  root: 'frontend', // Adjust the root to point to the frontend directory
+  root: 'backend/frontend', // Adjust the root to point to the frontend directory
   base: './',
   plugins: [react()],
   logLevel: 'info',
@@ -17,7 +17,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', // This ensures the build output goes to the dist folder
     rollupOptions: {
-      input: 'frontend/index.html', // Ensure this points to your index.html
+      input: 'backend/frontend/index.html', // Ensure this points to your index.html
     },
   },
 });
