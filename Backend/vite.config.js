@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  root: 'Frontend',
+  root: 'backend/frontend',
   base: './',
   plugins: [react()],
  logLevel: 'info',
