@@ -1,44 +1,20 @@
 {
-  "name": "bookstoreapp",
-  "version": "1.0.0",
-  "description": "mern project",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "vite",
-    "build": "vite build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/davudroshini00/BOOKSTOREAPP.git"
-  },
-  "author": "Roshini",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/davudroshini00/BOOKSTOREAPP/issues"
-  },
-  "homepage": "https://github.com/davudroshini00/BOOKSTOREAPP#readme",
-  "dependencies": {
-    "@vitejs/plugin-vue": "^5.0.5",
-    "autoprefixer": "^10.4.19",
-    "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
-    "daisyui": "^4.12.10",
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "glob": "^11.0.0",
-    "mongodb": "^6.8.0",
-    "mongoose": "^8.3.4",
-    "nodemon": "^3.1.0",
-    "postcss": "^8.4.39",
-    "sharp": "^0.33.3",
-    "tailwindcss": "^3.4.5"
-  },
-  "keywords": [],
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
-    "vite": "^5.3.3"
-  }
+    "name": "bookstoreapp-backend",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "dev": "nodemon index.js"
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.5",
+        "express": "^4.19.2",
+        "mongoose": "^8.5.2",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
 }

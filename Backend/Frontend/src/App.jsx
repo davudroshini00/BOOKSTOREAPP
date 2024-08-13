@@ -4,7 +4,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import Courses from './Course/Courses';
 import Signup from './components/Signup';
 import Contacts from './Contact/Contacts';
-import { Toaster } from "react-hot-toast";
+import { toast, Toaster } from "react-hot-toast";
 import { useAuth } from './Context/AuthProvider';
 
 const App = () => {
